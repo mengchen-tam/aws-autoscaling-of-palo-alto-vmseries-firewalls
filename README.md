@@ -1,3 +1,12 @@
+# CN_Branch
+This is a fork version of aws-samples/aws-autoscaling-of-palo-alto-vmseries-firewalls
+https://github.com/aws-samples/aws-autoscaling-of-palo-alto-vmseries-firewalls
+
+The main differences:
+1. adopt arn for China region
+2. replace spoken VM AMI with AL2023 in China
+3. add Palo Alto init configuration script
+
 # AWS AutoScaling of the Palo Alto Firewall VMs in the Centralized Egress Inpsection VPC
 
 # Overview

@@ -1,4 +1,6 @@
 # AWS AutoScaling of the Palo Alto Firewall VMs in the Centralized Egress Inpsection VPC
+# This repo is for cn-region deployment test, please switch the branch
+git checkout cn-region-branch
 
 # Overview
 

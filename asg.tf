@@ -3,7 +3,7 @@
 resource "aws_launch_template" "tmpl" {
   name_prefix   = "pavmasg_tmpl"
   image_id      = var.pavm_ami
-  instance_type = "m4.large"
+  instance_type = "m5.large"
   key_name      = var.key_name
   user_data     = filebase64("${path.module}/scripts/userdata.sh")
   iam_instance_profile {

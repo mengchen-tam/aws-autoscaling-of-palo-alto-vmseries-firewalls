@@ -34,4 +34,5 @@ set rulebase security rules deny_all destination-hip any
 set rulebase security rules deny_all action deny
 set rulebase security rules deny_all description deny_all
 
-
+#修改密码
+set mgt-config users admin password

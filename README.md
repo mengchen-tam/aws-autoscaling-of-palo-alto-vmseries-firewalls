@@ -64,8 +64,14 @@ If the Palo Alto Market Place AMI is not subscribed, Terraform apply fails with 
 ## 1. Assign EIP to the Management Interface of the Palo Alto VMs.
 
  To access the Palo Alto VMs via SSH and Web Browser, assign an elastic IP on to the PAVM Management Network Interface.
-
+```
+Note: Use Network Interface to assign elastic IP, not instance.
+```
 ## 2. Assign Admin user password to access the Palo Alto VMs.
+```
+Note: There is init_configuration contains the CLI configuration covering step 2 -4.
+Paste in CLI two times and commit in CLI.
+```
 
 ```
 ssh -i <KEY_NAME>.pem  admin@<EIP>
@@ -119,3 +125,5 @@ Commit changes in the Firewalls, and a custom namespace will be created with the
 After successfull deployment, completing the pre requisites, post deployment steps and making sure the GWLB target group health checks are passing, login to the AWS console and connect to anyone of the EC2 spoke-vm (spoke_vpc_vm_az1/2) via SSM manager and execute curl "https://google.com/", and you should see the traffic is routed to the Palo Alto instances.
 
 ![](./pavm_traffic_monitoring.png)
+
+ 
